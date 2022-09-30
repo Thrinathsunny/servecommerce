@@ -14,7 +14,7 @@ const cartController=require("./user/routes/crud")
 
 const mongoose=require("mongoose");
 
-mongoose.connect("mongodb+srv://thrinath:sunny123@thrinath.61cam88.mongodb.net/?retryWrites=true&w=majority",(data)=>{
+mongoose.connect(process.env.PORT||3001,(data)=>{
 console.log("connected to ecommerce db")
 },(err)=>{
     console.log(err)
